@@ -1,13 +1,11 @@
-# DSA — Data Structures & Algorithms
+Welcome to Data Structures & Algorithms preparation!
 
 Hello! I'm snowf1akes. This repository contains reference implementations of core data structures and algorithms.
 
 It is designed to support:
-- Reinforcing foundational understanding
-- Interview preparation
-- Clear, minimal examples that prioritize correctness and reasoning
-
-The focus is on clarity and correctness before optimization.
+- foundational understanding
+- interview preparation
+- and visualizing them.
 
 ## Structure
 
