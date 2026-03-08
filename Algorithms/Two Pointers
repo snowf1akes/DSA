@@ -1,0 +1,28 @@
+Two Pointers Algorithms: resource "AlgomasterIO youtube"
+
+What problems could use this? == Linear Data Structures 
+- arrays (sorted or palindrome)
+- strings 
+- linked list
+- both used to reduce time complexity O(n^2) --> O(n)
+
+3 most common strats
+- Converging pointers: opposite directions and move into a converging point. 
+    ex. Palindrome
+    "abcdcba"  --> "abcdcba"
+     *     *          **
+
+- Parallel pointers: both start at same point, both move right. R pointer is exploratory, while L pointer is track progress
+    ex. Sliding window technique
+    3, 1, -2, 6, 7, 5   -->  3, 1, -2, 6, 7, 5
+    L     R                         L  R 
+
+- Trigger-Based Pointers: R pointer moves right until condition is met, then start L pointer to find additional info. 
+    ex. Finding Nth node in a linked list.
+    1->3->5->7->9->11   e.g. condition is "7"  --> move both pointers at same interval until it reaches the end.
+    L        R
+
+When to use?
+- Linear data structures
+- Return a pair of values under a condition
+
