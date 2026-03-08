@@ -1,0 +1,17 @@
+Sets: {1, 2, 3, 4, 5}
+
+Collection of unique values, no order, no duplicates. 
+
+When to use compared to lists?
+    - constant O(1) time
+    - Uniqueness
+    - Existence
+    - Fast Membership checks 
+
+Problems that use this?
+    - Find repeated elements in array (duplicates)
+    - sliding window where all elements needs to be unique
+
+Note: NOT FOR KEY VALUE PAIRS
+Resource: Freecodecamp youtube
+
