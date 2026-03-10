@@ -1,0 +1,54 @@
+Hashmaps:
+
+What is it?
+    - Intput: Key, Output: Value == pair
+    - Data Structure
+    - o(1) for lookup and insertion --> it doesn't depend on size of the data
+
+When to use?
+    - Has to be hashable: numbers, strings, tuples
+    - !! NOT LISTS OR DICTIONARIES !!
+    - Finding values that already exists
+
+Syntax patterns:
+    - Storing something
+    - Looking something up
+    - Update/intilize values as you go
+
+Basic code structure in python:
+    - Frequency map:
+
+    hmap = {}
+    
+    for item in data:
+        if item not in hmap:
+            hmap[item] = 1
+        else:
+            hmap[item] += 1
+
+python # defaultdict: store something under key and updating later. 
+
+Concept of Hashing:
+    - Implmented under an array with an 
+            Hasmap
+        index: key, value pair  
+
+Syntax on how to use it.
+    - PUTTING INTO HASHMAP
+    - hashmap.put("Alice", "NYC") = hashing function 
+    - if alphabets --> can map letters into integers. i.g A = 0, L = 11. Sum of 'alice' is 26.
+        - can also use ASCII techniques
+        - be wary of collisions
+        - rehashing the array occurs before hashmap.put() 
+        - size of array doubles during rehashing. 
+    - RETRIVING hashmap.get()
+
+How to avoid collisions:
+    - Chaining approach
+        - store linkedlist of pairs at same index (downsides: more memory heavy)
+    - Open Addressing approach
+        - Address is more loosely defined. 
+        - downsides (clusterd hashmap) if only + 1 method.
+
+
+
