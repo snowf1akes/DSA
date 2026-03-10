@@ -11,7 +11,7 @@ Example problem: Q: given an array of values, desgin a data strcuture that can q
 
 Code:
 
-    def _init_(self,nums):
+    def __init__(self,nums):
         self.prefix = []
         total = 0
         for n in nums:
