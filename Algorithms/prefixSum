@@ -1,0 +1,25 @@
+PrefixSum: array, any subarray that starts at beginning of array 
+
+sum of that first x values...
+    - prefix product can also happen
+    - Postfix == opposite of prefix 
+
+Example problem: Q: given an array of values, desgin a data strcuture that can query the sum of a subarray of the values. 
+    - function = querySum(L, R)  O(n) if hard code
+    - more efficient method == prefix sum - prefix value = sum of the subarray. 
+        - since its in 1 swoop = O(1) operation. 
+
+Code:
+
+    def _init_(self,nums):
+        self.prefix = []
+        total = 0
+        for n in nums:
+            total += n
+            self.prefix.append(total)
+
+    def rangeSum(self, left, right):
+        preRight = self.prefix[right]
+        preLeft = self.prefix[left - 1] if left > 0 else 0
+        return (preRight - preLeft)
+
