@@ -68,5 +68,31 @@ def pop(self):
             break
     return res
 
+#Heapify = turn random array into heap form in O(n) time
+#step 1: remove index 0, and place at back of heap. self.heap[1] = self.heap.pop()
+# i = 1
+
+def heapify(self,arr):
+    arr.append(arr[0])
+
+    self.heap = arr
+    cur = (len(self.heap ) - 1) // 2
+    while cur > 0:
+        #perculate down
+        i = cur
+        while 2 * i < len(self.heap):
+            if (2* i + 1 < len(self.heap) and 
+                self.heap[2 * i  + 1] < self.heap[2 * i] and 
+                self.heap[i] > self.heap[2 * i + 1]):
+                #swap right child
+                self.heap[i], self.heap[2 * i + 1] = self.heap[2 * i + 1], self.heap[i]
+                i = 2*i + 1
+            elif self.heap[i] > self.heap[2*i]:
+                #swap left child
+                self.heap[i], self.heap[2 * i ] = self.heap[2*i], self.heap[i]
+                i = 2 * i 
+            else:
+                break
+        cur -= 1
 
 #Resource: Neetcode Heap properties, push and pop, heapify
