@@ -1,22 +1,36 @@
-Sliding Window algorithm
+ Sliding Window algorithm: two pointer that has a distance k apart. 
 
-Fixed size version and Variable size version exist
+ Fixed size version and Variable size version exist
 
-Fixed size first:
-    - Maintain two pointers that have the same distance (k) apart. 
+ Fixed size first:
+     - Maintain two pointers that have the same distance (k) apart. 
 
+  example question
+     - Q: given array, return true if there are two elements within a window of size k that are equal
 
-
-
- example question
-    - Q: given array, return true if there are two elements within a window of size k that are equal
-
-    array: [1, 2, 3, 2, 3, 3,]
+     array: [1, 2, 3, 2, 3, 3,]
 
 brute force method:
-    - for L in range(len(nums)): #loop left pointer through array length
-        for R in range(L + 1, min(len(nums), L + K)): #for the right pointer, skip first index, and move onwards the minimum length of left pointer + k
-            if nums[L] == nums[R]: #if value at left pointer = right pionter
-                return True
-        return False
+
+for L in range(len(nums)): #loop left pointer through array length
+    for R in range(L + 1, min(len(nums), L + K)): #for the right pointer, skip first index, and move onwards the minimum length of left pointer + k
+        if nums[L] == nums[R]: #if value at left pointer = right pionter
+            return True
+    return False
+
+
+Proper detect duplicates with (Hashset) optimized sliding window solution.
+
+window = set()
+L = 0
+
+for R in range(len(nums)):
+    if R - L + 1 > k:
+        window.remove(nums[L])
+        L += 1
+    if nums[R] in window:
+        return True
+    window.add(nums[R])
+
+return False
 
