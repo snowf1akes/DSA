@@ -1,0 +1,8 @@
+Syntax for control flow & looping
+
+    - For i in range(n)
+    - for val in arr
+    - while start < end
+    - if, else, elif
+    - break, continue
+    
