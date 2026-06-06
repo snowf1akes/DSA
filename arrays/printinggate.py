@@ -10,7 +10,7 @@
 # *********
 
 def solution(n):
-    if n ==1:
+    if n == 1:
         return ['*']
     result = []
     result.append('*' * n)
