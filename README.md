@@ -1,4 +1,4 @@
-DSA — Data Structures & Algorithms
+Data Structures & Algorithms practice
 
 Hey everyone, I'm sunny. This is where I keep my implementations of dsa practice - mostly for interview prep this summer break into internship cycles this fall. 
 
