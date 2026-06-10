@@ -1,4 +1,4 @@
-#string basics
+#string basics practice
 
 s = 'hello world'
 print(s[0]) #first char
