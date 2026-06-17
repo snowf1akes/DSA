@@ -2,7 +2,7 @@
 
 #brainstorm : converging two pointers tech. 
 # start with index beginning and end points. Find area = min(height[left], height[right]) * width (right - left)
-#move pointer to the shorter height
+#move pointer to shorter height
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
