@@ -51,7 +51,7 @@ class TreeNode {
 
 #depth first search: !! DFS !!
 #go as deep first, then do the rest of the nodes, the above are all examples of DFS
-#if bfs, its layer by layer, kinda like heaps with its structures. 
+#if bfs, its layer by layer, kinda like heaps with its structure. 
 
 
 
