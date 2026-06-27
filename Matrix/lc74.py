@@ -1,4 +1,4 @@
-#Search a 2D Matrix --> binary search
+#Search a 2D Matrix --> binary search alg
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
