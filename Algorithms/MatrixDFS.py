@@ -1,4 +1,4 @@
-#Matrix graphing with DFS 
+#Matrix graphing with DFS
 #example Q: Count the unique paths from the top left to the bottom right. A single path may only move along 0's and can't visit the same cell more than once. 
 #matrix: 0 is path, 1 is wall --> related to backtracking. 
 0, 0, 0, 0
