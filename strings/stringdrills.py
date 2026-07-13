@@ -9,7 +9,7 @@ print(s.upper()) # HELLO WORLD (caps lock)
 print(s.lower()) # hello world (lower case)
 
 
-
+ 
 #reverse everything
 #reverse a string
 s = 'abcdef'
