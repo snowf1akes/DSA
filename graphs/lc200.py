@@ -1,4 +1,4 @@
-#number of islands
+#number of islands --> dfs alg
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         m , n = len(grid), len(grid[0])
