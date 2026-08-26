@@ -9,5 +9,5 @@ class Solution:
 
             key = tuple(count)
             anagrams_dict[key].append(s)
-#needs list() othrrwise doesnt fit needcode version
+#needs list() otherwise doesnt fit needcode version
         return list(anagrams_dict.values())
