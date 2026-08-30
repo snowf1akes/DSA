@@ -1,4 +1,4 @@
-#container with most water
+#container with most water lc
 
 #brainstorm : converging two pointers tech. 
 # start with index beginning and end points. Find area = min(height[left], height[right]) * width (right - left)
