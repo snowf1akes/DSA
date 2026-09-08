@@ -1,3 +1,9 @@
+#strings are immuteable, so to change things, convert into list first then you can edit then convert back into string.
+#string --> list
+#list(str) 
+#list --> string
+#''.join(list) 
+
 #string basics practice
 
 s = 'hello world'
