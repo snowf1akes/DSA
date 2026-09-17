@@ -1,7 +1,9 @@
-Data Structures & Algorithms practice
+Guide to getting cracked at Leetcode, systematic method.
 
-Hey everyone, I'm sunny. This is where I keep a record of dsa practice - mostly for interview prep this summer break into internship cycles this fall. 
-
-Everything's in Python with one concept per file. Each file has the implementation, notes + tips and tricks that I learn along the way.
+blind 75:
+1. Watch neetcode tutorial on what that algorithm is
+2. get reps in for basic algorithms --> implement them 5 times each before session on leetcode
+3. then do leetcode problems on that algorithm type
+4. jot down if you got stuck on that question and do it the next day
 
 
