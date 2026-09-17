@@ -84,7 +84,7 @@ def closeDuplicates(nums, k):
     L = 0 #initialize starting window
 
     for R in range(len(nums)):
-        if R - L + 1 > k: #too big window
+        if R - L > k: #too big window
             window.remove(nums[L])
             L += 1
 
@@ -102,7 +102,7 @@ def closeDuplicates(nums, k):
     L = 0
 
     for R in range(len(nums)):
-        if R - L + 1 > k:
+        if R - L > k:
             window.remove(nums[L])
             L += 1
         if nums[R] in window:
@@ -117,7 +117,7 @@ def closeDuplicates(nums, k):
     L = 0
     window = set()
     for R in range(len(nums)):
-        if R - L + 1 > k:
+        if R - L > k:
             window.remove(nums[L])
             L += 1
         if nums[R] in window:
@@ -132,11 +132,12 @@ def closeDuplicates(nums, k):
     L = 0
     window = set()
     for R in range(len(nums)):
-        if R - L + 1 > k:
+        if R - L > k:
             window.remove(nums[L])
             L += 1
         if nums[R] in window:
             return True
+        window.add(nums[R])
 
     return False
 
@@ -151,6 +152,7 @@ def closeDuplicates(nums, k):
             L += 1
         if nums[R] in window:
             return True
+        window.add(nums[R])
 
     return False
 
