@@ -1,4 +1,4 @@
-#binary search
+#binary search array sorted
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         L, R = 0, len(nums) - 1
@@ -13,20 +13,29 @@ class Solution:
 
         return -1
 
+#binary search range
 
 
-class Solution:
-    def search(self, nums: List[int], target: int) -> int:
-        l, r = 0, len(nums) - 1
-        while l <= r:
-            mid = (l + r) // 2
-            if target < nums[mid]:
-                r = mid - 1
-            elif target > nums[mid]:
-                l = mid + 1
-            else:
-                return mid
+def binarysearch(low, high):
+    while low <= high:
+        mid = (low + high) // 2
+
+        if isCorrect(mid) > 0:
+            high = mid - 1 
+        elif isCorrect(mid) < 0:
+            low = mid + 1
+        else:
+            return mid 
+    return -1
+
+def isCorrect(n):
+    if n > 10:
+        return 1
+    elif n < 10:
         return -1
+    else:
+        return 0
+    
 
 
 
