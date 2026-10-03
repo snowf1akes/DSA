@@ -25,3 +25,15 @@ def postorder(root):
   print(root.val) #then print out values
 
 
+
+
+
+
+
+
+
+
+
+
+
+
