@@ -33,23 +33,15 @@ def bfs(root):
 
 
 
+#bfs rep 2
 
-
-
-
-
-
-
-
-#bfs rep 1
-
-#1. dequeue
-from collections import deque 
+from collections import deque
 
 def bfs(root):
   queue = deque()
   if root:
-    queue.append(root) 
+    queue.append(root)
+
   level = 0
   while len(queue) > 0:
     print(level)
