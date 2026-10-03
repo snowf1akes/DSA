@@ -20,3 +20,45 @@ def bfs(root):
         queue.append(curr.right)
     level += 1 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bfs rep 1
+
+#1. dequeue
+from collections import deque 
+
+def bfs(root):
+  queue = deque()
+  if root:
+    queue.append(root) 
+  level = 0
+  while len(queue) > 0:
+    print(level)
+    for i in range(len(queue)):
+      curr = queue.popleft()
+      print(curr.val)
+      if curr.left:
+        queue.append(curr.left)
+      if curr.right:
+        queue.append(curr.right)
+    level += 1
+
